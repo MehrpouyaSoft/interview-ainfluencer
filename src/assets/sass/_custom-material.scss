@@ -1,0 +1,51 @@
+.MuiTypography-root,
+.MuiInputLabel-root,
+.MuiButton-root,
+.MuiAlert-message,
+.Toastify__toast-body,
+.MuiOutlinedInput-input {
+    font-family: dana !important;
+}
+
+.MuiInputLabel-root {
+    transform-origin: top right !important;
+    left: unset !important;
+    right: 30px;
+}
+
+.MuiAlert-icon {
+    margin: 0 0 0 12px !important;
+}
+
+.MuiButton-root {
+    padding: 15px 40px !important;
+    width: 100% !important;
+    box-shadow: unset !important;
+}
+
+.MuiFilledInput-root {
+    background: #edf2f5 !important;
+
+    &::before {
+        border-bottom-color: #edf2f5 !important;
+    }
+}
+
+.MuiFormControlLabel-root {
+    margin-right: -12px !important;
+    .MuiSvgIcon-root {
+        color: #635bff !important;
+    }
+}
+
+.MuiButton-containedPrimary {
+    background-color: #635bff !important;
+    border-color: #635bff !important;
+    color: #FFF !important;
+
+    &:hover {
+        color: #fff !important;
+        background-color: #483dff !important;
+        border-color: #3c30ff !important;
+    }
+}

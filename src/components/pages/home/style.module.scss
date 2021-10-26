@@ -1,0 +1,25 @@
+.boxToken {
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.exit {
+    margin: 30px;
+    background-color: #635bff;
+    border-radius: 3px;
+    font-family: dana;
+    border: none;
+    color: #fff;
+    font-size: .9rem;
+    padding: 9px 26px;
+    svg {
+        transform: scale(.9);
+    }
+}
