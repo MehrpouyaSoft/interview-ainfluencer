@@ -7,9 +7,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/sass/app.scss';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider } from 'react-redux'
+import { Provider as ProviderMobx } from 'mobx-react'
 import { CookiesProvider } from 'react-cookie';
 import { store } from './lib/redux/store';
+import AppStore from 'lib/mobx/AppStore';
 const queryClient = new QueryClient()
+
+const storeMobx = {
+  AppStore
+}
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +23,9 @@ ReactDOM.render(
       <QueryClientProvider client={queryClient}>
         <CookiesProvider>
           <Provider store={store}>
-            <App />
+            <ProviderMobx {...storeMobx}>
+              <App />
+            </ProviderMobx>
           </Provider>
         </CookiesProvider>
       </QueryClientProvider>
